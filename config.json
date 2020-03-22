@@ -1,0 +1,9 @@
+{
+  "packageName": "com.thebluealliance",
+  "modelPackage": "com.thebluealliance.model",
+  "apiPackage": "com.thebluealliance.api",
+  "groupId": "com.thebluealliance",
+  "artifactId": "api_v3",
+  "artifactVersion": "2020.0.0",
+  "dateLibrary": "java8"
+}
