@@ -36,7 +36,7 @@ swaggerSources {
 
 sourceSets.main.kotlin.srcDir "${swaggerSources.tba.code.outputDir}/src/main/kotlin"
 
-task fixEventPredictions {
+task lastMinuteFixes {
 	dependsOn generateSwaggerCodeTba
 	doLast {
 		// The following snippet changes EventPredictions from a data class to a normal class, on account of its properties being dynamically known
@@ -44,14 +44,45 @@ task fixEventPredictions {
 			"${swaggerSources.tba.code.outputDir}/src/main/kotlin/com/thebluealliance/model/EventPredictions.kt"
 		)
 		EventPredictions.write(
-			EventPredictions.text.replaceAll("data ", "")
+			EventPredictions.text.replaceFirst("data ", "")
 		)
 		println("Fixed EventPredictions")
+		println("****************************************************************")
+		// Add api key to all RequestConfig headers
+		def RequestConfig = file(
+			"${swaggerSources.tba.code.outputDir}/src/main/kotlin/com/thebluealliance/infrastructure/RequestConfig.kt"
+		)
+		RequestConfig.write("""
+package com.thebluealliance.infrastructure
+
+/**
+ * Defines a config object for a given request.
+ * NOTE: This object doesn't include 'body' because it
+ *       allows for caching of the constructed object
+ *       for many request definitions.
+ * NOTE: Headers is a Map<String,String> because rfc2616 defines
+ *       multi-valued headers as csv-only.
+ */
+class RequestConfig(
+    val method: RequestMethod,
+    val path: String,
+    headers: Map<String, String> = mapOf(),
+    val query: Map<String, List<String>> = mapOf()
+) {
+\tval headers = headers
+\t\t.toMutableMap()
+\t\t.apply {
+\t\t\tthis["X-TBA-Auth-Key"] = "${project["tba_api_key"]}"
+\t\t}.toMap()
+}
+
+""")
+		println("Injected TBA-Auth-Key")
 		println("****************************************************************")
 	}
 	
 }
 
 compileKotlin {
-	dependsOn project.tasks.findByName("fixEventPredictions")
+	dependsOn project.tasks.findByName("lastMinuteFixes")
 }
