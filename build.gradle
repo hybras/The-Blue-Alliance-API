@@ -36,8 +36,7 @@ swaggerSources {
 
 sourceSets.main.kotlin.srcDir "${swaggerSources.tba.code.outputDir}/src/main/kotlin"
 
-task lastMinuteFixes {
-	dependsOn generateSwaggerCodeTba
+generateSwaggerCodeTba {
 	doLast {
 		// The following snippet changes EventPredictions from a data class to a normal class, on account of its properties being dynamically known
 		def EventPredictions = file(
@@ -84,5 +83,5 @@ class RequestConfig(
 }
 
 compileKotlin {
-	dependsOn project.tasks.lastMinuteFixes
+	dependsOn generateSwaggerCodeTba
 }
