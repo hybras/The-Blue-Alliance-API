@@ -84,5 +84,5 @@ class RequestConfig(
 }
 
 compileKotlin {
-	dependsOn project.tasks.findByName("lastMinuteFixes")
+	dependsOn project.tasks.lastMinuteFixes
 }
