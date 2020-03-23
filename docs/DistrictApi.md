@@ -45,10 +45,10 @@ try {
 
 ### Parameters
 
-|     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     | **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |     |     |     |     |     |     |
-|     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -93,10 +93,10 @@ try {
 
 ### Parameters
 
-|     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |
-| --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- |
-|     |     |     |     |     | **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |     |     |     |     |     |
-|     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -141,10 +141,10 @@ try {
 
 ### Parameters
 
-|     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |
-| --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- |
-|     |     |     |     | **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |     |     |     |     |
-|     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -189,10 +189,10 @@ try {
 
 ### Parameters
 
-| | | | Name                                                             | Type                                                     | Description                                                                                                                                                                                                                                                                                                                                                      | Notes                        |                        |                        |                        |
-| ------| ------| ------| ------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |- |- |- |
-|||| **districtKey**                 | **kotlin.String**    | TBA District Key, eg &#x60;2016fim&#x60;                                                                                                                                                                                                                                     | [default to null]            |            |            |            |
-|||| **ifModifiedSince** | **kotlin.String**    | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -237,10 +237,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **kotlin.String**| TBA District Key, eg &#x60;2016fim&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -285,10 +285,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **kotlin.String**| TBA District Key, eg &#x60;2016fim&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |     |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |     |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |
 
 ### Return type
 
@@ -333,10 +333,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **districtKey** | **kotlin.String**| TBA District Key, eg &#x60;2016fim&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 

@@ -70,10 +70,10 @@ try {
 
 ### Parameters
 
-|     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |
-| --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- |
-|     |     | **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |     |     |
-|     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -118,10 +118,10 @@ try {
 
 ### Parameters
 
-|     | Name                | Type              | Description                                                                                       | Notes                        |     |
-| --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- |
-|     | **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |     |
-|     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **districtKey**     | **kotlin.String** | TBA District Key, eg &#x60;2016fim&#x60;                                                          | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -214,10 +214,10 @@ try {
 
 ### Parameters
 
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -262,10 +262,10 @@ try {
 
 ### Parameters
 
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -310,10 +310,10 @@ try {
 
 ### Parameters
 
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -358,10 +358,10 @@ try {
 
 ### Parameters
 
-| | | | | | | | | | | | | | Name                                                                                                                                                                                                                   | Type                                                                                                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Notes                        |                        |                        |                        |                        |                        |                        |                        |                        |                        |                        |                        |                        |                        |
-| ------| ------| ------| ------| ------| ------| ------| ------| ------| ------| ------| ------| ------| ------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |--------------- |
-|||||||||||||| **eventKey**                                                                                                   | **kotlin.String**              | TBA Event Key, eg &#x60;2016nytr&#x60;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | [default to null]            |            |            |            |            |            |            |            |            |            |            |            |            |            |
-|||||||||||||| **ifModifiedSince** | **kotlin.String**              | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | | | | | | | | | | | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -406,10 +406,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |     |     |     |     |
 
 ### Return type
 
@@ -454,10 +454,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |     |     |     |
 
 ### Return type
 
@@ -502,10 +502,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |     |     |
 
 ### Return type
 
@@ -550,10 +550,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |     |
 
 ### Return type
 
@@ -598,10 +598,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |     |
 
 ### Return type
 
@@ -646,10 +646,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |     |
 
 ### Return type
 
@@ -694,10 +694,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |     |
+|     |     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |     |
 
 ### Return type
 
@@ -742,10 +742,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |     |
+| --- | --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- | --- |
+|     |     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |     |
+|     |     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |     |
 
 ### Return type
 
@@ -790,10 +790,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |     |
+| --- | --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- | --- |
+|     |     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |     |
+|     |     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |     |
 
 ### Return type
 
@@ -838,10 +838,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |
+| --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- |
+|     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |
+|     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |
 
 ### Return type
 
@@ -886,10 +886,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |
+| --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- |
+|     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |
+|     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |
 
 ### Return type
 
@@ -934,10 +934,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     | Name                | Type              | Description                                                                                       | Notes                        |     |
+| --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- |
+|     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |
+|     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |
 
 ### Return type
 
@@ -982,10 +982,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1030,10 +1030,10 @@ try {
 
 ### Parameters
 
-|     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |
-| --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- |
-|     |     | **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |     |     |
-|     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1078,10 +1078,10 @@ try {
 
 ### Parameters
 
-|     | Name                | Type              | Description                                                                                       | Notes                        |     |
-| --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- |
-|     | **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |     |
-|     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1175,11 +1175,11 @@ try {
 
 ### Parameters
 
-| | | | | Name                                                                            | Type                                                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                           | Notes                        |                        |                        |                        |                        |
-| | | | | ------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |--------------- |--------------- |
-||||| **teamKey**                                         | **kotlin.String**     | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                                                                                                                                                       | [default to null]            |            |            |            |            |
-||||| **eventKey**                                    | **kotlin.String**     | TBA Event Key, eg &#x60;2016nytr&#x60;                                                                                                                                                                                                                                                                                                        | [default to null]            |            |            |            |            |
-||||| **ifModifiedSince** | **kotlin.String**     | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1225,11 +1225,11 @@ try {
 
 ### Parameters
 
-| | | | Name                                                             | Type                                                     | Description                                                                                                                                                                                                                                                                                                                                                      | Notes                        |                        |                        |                        |
-| | | | ------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |--------------- |
-|||| **teamKey**                                 | **kotlin.String**    | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                                                                                         | [default to null]            |            |            |            |
-|||| **eventKey**                             | **kotlin.String**    | TBA Event Key, eg &#x60;2016nytr&#x60;                                                                                                                                                                                                                                             | [default to null]            |            |            |            |
-|||| **ifModifiedSince** | **kotlin.String**    | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1275,11 +1275,11 @@ try {
 
 ### Parameters
 
-| | | Name                                              | Type                                        | Description                                                                                                                                                                                                                                                                 | Notes                        |                        |                        |
-| | | ------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |
-||| **teamKey**                         | **kotlin.String**   | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                           | [default to null]            |            |            |
-||| **eventKey**                      | **kotlin.String**   | TBA Event Key, eg &#x60;2016nytr&#x60;                                                                                                                                                                                  | [default to null]            |            |            |
-||| **ifModifiedSince** | **kotlin.String**   | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1325,11 +1325,11 @@ try {
 
 ### Parameters
 
-| | Name                               | Type                           | Description                                                                                                                                                                            | Notes                        |                        |
-| | ------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |
-|| **teamKey**                 | **kotlin.String**  | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                             | [default to null]            |            |
-|| **eventKey**               | **kotlin.String**  | TBA Event Key, eg &#x60;2016nytr&#x60;                                                                                                                       | [default to null]            |            |
-|| **ifModifiedSince** | **kotlin.String**  | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1375,11 +1375,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **kotlin.String**| TBA Team Key, eg &#x60;frc254&#x60; | [default to null]
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1424,10 +1424,10 @@ try {
 
 ### Parameters
 
-|     |     | Name | Type | Description | Notes |  |  |
-| --- | --- | ---- | ---- | ----------- | ----- || |
-||| **teamKey**                         | **kotlin.String**   | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                           | [default to null]            |            |            |
-||| **ifModifiedSince** | **kotlin.String**   | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1473,11 +1473,11 @@ try {
 
 ### Parameters
 
-| | | | Name                                                             | Type                                                     | Description                                                                                                                                                                                                                                                                                                                                                      | Notes                        |                        |                        |                        |
-| | | | ------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |--------------- |
-|||| **teamKey**                                 | **kotlin.String**    | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                                                                                         | [default to null]            |            |            |            |
-|||| **year**                                             | **kotlin.Int**                | Competition Year (or Season). Must be 4 digits.                                                                                                                                                                                                         | [default to null]            |            |            |            |
-|||| **ifModifiedSince** | **kotlin.String**    | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1523,11 +1523,11 @@ try {
 
 ### Parameters
 
-| | | Name                                              | Type                                        | Description                                                                                                                                                                                                                                                                 | Notes                        |                        |                        |
-| | | ------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |
-||| **teamKey**                         | **kotlin.String**   | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                           | [default to null]            |            |            |
-||| **year**                                  | **kotlin.Int**            | Competition Year (or Season). Must be 4 digits.                                                                                                                                                       | [default to null]            |            |            |
-||| **ifModifiedSince** | **kotlin.String**   | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1573,11 +1573,11 @@ try {
 
 ### Parameters
 
-| | Name                               | Type                           | Description                                                                                                                                                                            | Notes                        |                        |
-| | ------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |
-|| **teamKey**                 | **kotlin.String**  | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                             | [default to null]            |            |
-|| **year**                       | **kotlin.Int**        | Competition Year (or Season). Must be 4 digits.                                                                                                     | [default to null]            |            |
-|| **ifModifiedSince** | **kotlin.String**  | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -1622,10 +1622,10 @@ try {
 
 ### Parameters
 
-|     | Name | Type | Description | Notes |  |
-| --- | ---- | ---- | ----------- | ----- ||
-|| **teamKey**                 | **kotlin.String**  | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                             | [default to null]            |            |
-|| **ifModifiedSince** | **kotlin.String**  | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | |
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
