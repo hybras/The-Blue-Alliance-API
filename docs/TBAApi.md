@@ -1,21 +1,19 @@
 # TBAApi
 
-All URIs are relative to *https://www.thebluealliance.com/api/v3*
+All URIs are relative to *<https://www.thebluealliance.com/api/v3>*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getStatus**](TBAApi.md#getStatus) | **GET** /status | 
+| Method                               | HTTP request    | Description |
+| ------------------------------------ | --------------- | ----------- |
+| [**getStatus**](TBAApi.md#getStatus) | **GET** /status |
 
+## **getStatus**
 
-<a name="getStatus"></a>
-# **getStatus**
 > APIStatus getStatus(ifModifiedSince)
-
-
 
 Returns API status, and TBA status information.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -37,9 +35,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -53,4 +51,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-

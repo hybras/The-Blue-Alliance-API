@@ -2,10 +2,8 @@
 # MatchSimpleAlliances
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**red** | [**MatchAlliance**](MatchAlliance.md) |  |  [optional]
-**blue** | [**MatchAlliance**](MatchAlliance.md) |  |  [optional]
 
-
-
+| Name     | Type                                  | Description | Notes      |
+| -------- | ------------------------------------- | ----------- | ---------- |
+| **red**  | [**MatchAlliance**](MatchAlliance.md) |             | [optional] |
+| **blue** | [**MatchAlliance**](MatchAlliance.md) |             | [optional] |

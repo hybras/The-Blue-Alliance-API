@@ -1,34 +1,32 @@
 # MatchApi
 
-All URIs are relative to *https://www.thebluealliance.com/api/v3*
+All URIs are relative to *<https://www.thebluealliance.com/api/v3>*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getEventMatchTimeseries**](MatchApi.md#getEventMatchTimeseries) | **GET** /event/{event_key}/matches/timeseries | 
-[**getEventMatches**](MatchApi.md#getEventMatches) | **GET** /event/{event_key}/matches | 
-[**getEventMatchesKeys**](MatchApi.md#getEventMatchesKeys) | **GET** /event/{event_key}/matches/keys | 
-[**getEventMatchesSimple**](MatchApi.md#getEventMatchesSimple) | **GET** /event/{event_key}/matches/simple | 
-[**getMatch**](MatchApi.md#getMatch) | **GET** /match/{match_key} | 
-[**getMatchSimple**](MatchApi.md#getMatchSimple) | **GET** /match/{match_key}/simple | 
-[**getMatchTimeseries**](MatchApi.md#getMatchTimeseries) | **GET** /match/{match_key}/timeseries | 
-[**getMatchZebra**](MatchApi.md#getMatchZebra) | **GET** /match/{match_key}/zebra_motionworks | 
-[**getTeamEventMatches**](MatchApi.md#getTeamEventMatches) | **GET** /team/{team_key}/event/{event_key}/matches | 
-[**getTeamEventMatchesKeys**](MatchApi.md#getTeamEventMatchesKeys) | **GET** /team/{team_key}/event/{event_key}/matches/keys | 
-[**getTeamEventMatchesSimple**](MatchApi.md#getTeamEventMatchesSimple) | **GET** /team/{team_key}/event/{event_key}/matches/simple | 
-[**getTeamMatchesByYear**](MatchApi.md#getTeamMatchesByYear) | **GET** /team/{team_key}/matches/{year} | 
-[**getTeamMatchesByYearKeys**](MatchApi.md#getTeamMatchesByYearKeys) | **GET** /team/{team_key}/matches/{year}/keys | 
-[**getTeamMatchesByYearSimple**](MatchApi.md#getTeamMatchesByYearSimple) | **GET** /team/{team_key}/matches/{year}/simple | 
+| Method                                                                   | HTTP request                                              | Description |
+| ------------------------------------------------------------------------ | --------------------------------------------------------- | ----------- |
+| [**getEventMatchTimeseries**](MatchApi.md#getEventMatchTimeseries)       | **GET** /event/{event_key}/matches/timeseries             |
+| [**getEventMatches**](MatchApi.md#getEventMatches)                       | **GET** /event/{event_key}/matches                        |
+| [**getEventMatchesKeys**](MatchApi.md#getEventMatchesKeys)               | **GET** /event/{event_key}/matches/keys                   |
+| [**getEventMatchesSimple**](MatchApi.md#getEventMatchesSimple)           | **GET** /event/{event_key}/matches/simple                 |
+| [**getMatch**](MatchApi.md#getMatch)                                     | **GET** /match/{match_key}                                |
+| [**getMatchSimple**](MatchApi.md#getMatchSimple)                         | **GET** /match/{match_key}/simple                         |
+| [**getMatchTimeseries**](MatchApi.md#getMatchTimeseries)                 | **GET** /match/{match_key}/timeseries                     |
+| [**getMatchZebra**](MatchApi.md#getMatchZebra)                           | **GET** /match/{match_key}/zebra_motionworks              |
+| [**getTeamEventMatches**](MatchApi.md#getTeamEventMatches)               | **GET** /team/{team_key}/event/{event_key}/matches        |
+| [**getTeamEventMatchesKeys**](MatchApi.md#getTeamEventMatchesKeys)       | **GET** /team/{team_key}/event/{event_key}/matches/keys   |
+| [**getTeamEventMatchesSimple**](MatchApi.md#getTeamEventMatchesSimple)   | **GET** /team/{team_key}/event/{event_key}/matches/simple |
+| [**getTeamMatchesByYear**](MatchApi.md#getTeamMatchesByYear)             | **GET** /team/{team_key}/matches/{year}                   |
+| [**getTeamMatchesByYearKeys**](MatchApi.md#getTeamMatchesByYearKeys)     | **GET** /team/{team_key}/matches/{year}/keys              |
+| [**getTeamMatchesByYearSimple**](MatchApi.md#getTeamMatchesByYearSimple) | **GET** /team/{team_key}/matches/{year}/simple            |
 
+## **getEventMatchTimeseries**
 
-<a name="getEventMatchTimeseries"></a>
-# **getEventMatchTimeseries**
 > kotlin.Array&lt;kotlin.String&gt; getEventMatchTimeseries(eventKey, ifModifiedSince)
-
-
 
 Gets an array of Match Keys for the given event key that have timeseries data. Returns an empty array if no matches have timeseries data. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -51,10 +49,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |     |
+| --- | --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- | --- |
+|     |     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |     |
+|     |     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |     |
 
 ### Return type
 
@@ -69,15 +67,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getEventMatches"></a>
-# **getEventMatches**
+## **getEventMatches**
+
 > kotlin.Array&lt;Match&gt; getEventMatches(eventKey, ifModifiedSince)
-
-
 
 Gets a list of matches for the given event.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -100,10 +97,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     | Name                | Type              | Description                                                                                       | Notes                        |     |     |
+| --- | --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- | --- |
+|     |     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |     |
+|     |     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |     |
 
 ### Return type
 
@@ -118,15 +115,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getEventMatchesKeys"></a>
-# **getEventMatchesKeys**
+## **getEventMatchesKeys**
+
 > kotlin.Array&lt;kotlin.String&gt; getEventMatchesKeys(eventKey, ifModifiedSince)
-
-
 
 Gets a list of match keys for the given event.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -149,10 +145,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     | Name                | Type              | Description                                                                                       | Notes                        |     |
+| --- | ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | --- |
+|     | **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |     |
+|     | **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |     |
 
 ### Return type
 
@@ -167,15 +163,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getEventMatchesSimple"></a>
-# **getEventMatchesSimple**
+## **getEventMatchesSimple**
+
 > kotlin.Array&lt;MatchSimple&gt; getEventMatchesSimple(eventKey, ifModifiedSince)
-
-
 
 Gets a short-form list of matches for the given event.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -198,10 +193,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -216,15 +211,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getMatch"></a>
-# **getMatch**
+## **getMatch**
+
 > Match getMatch(matchKey, ifModifiedSince)
-
-
 
 Gets a &#x60;Match&#x60; object for the given match key.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -247,10 +241,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **matchKey** | **kotlin.String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     |     | Name | Type | Description | Notes |  |  |  |
+| --- | --- | --- | ---- | ---- | ----------- | ----- || | |
+|||| **matchKey**                             | **kotlin.String**    | TBA Match Key, eg &#x60;2016nytr_qm1&#x60;                                                                                                                                                                                                                             | [default to null]            |            |            |            |
+|||| **ifModifiedSince** | **kotlin.String**    | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | | |
 
 ### Return type
 
@@ -265,15 +259,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getMatchSimple"></a>
-# **getMatchSimple**
+## **getMatchSimple**
+
 > MatchSimple getMatchSimple(matchKey, ifModifiedSince)
-
-
 
 Gets a short-form &#x60;Match&#x60; object for the given match key.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -296,10 +289,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **matchKey** | **kotlin.String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     |     | Name | Type | Description | Notes |  |  |
+| --- | --- | ---- | ---- | ----------- | ----- || |
+||| **matchKey**                      | **kotlin.String**   | TBA Match Key, eg &#x60;2016nytr_qm1&#x60;                                                                                                                                                                      | [default to null]            |            |            |
+||| **ifModifiedSince** | **kotlin.String**   | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | |
 
 ### Return type
 
@@ -314,15 +307,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getMatchTimeseries"></a>
-# **getMatchTimeseries**
+## **getMatchTimeseries**
+
 > kotlin.Array&lt;kotlin.Any&gt; getMatchTimeseries(matchKey, ifModifiedSince)
-
-
 
 Gets an array of game-specific Match Timeseries objects for the given match key or an empty array if not available. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -345,10 +337,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **matchKey** | **kotlin.String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+|     | Name | Type | Description | Notes |  |
+| --- | ---- | ---- | ----------- | ----- ||
+|| **matchKey**               | **kotlin.String**  | TBA Match Key, eg &#x60;2016nytr_qm1&#x60;                                                                                                               | [default to null]            |            |
+|| **ifModifiedSince** | **kotlin.String**  | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | |
 
 ### Return type
 
@@ -363,15 +355,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getMatchZebra"></a>
-# **getMatchZebra**
+## **getMatchZebra**
+
 > Zebra getMatchZebra(matchKey, ifModifiedSince)
-
-
 
 Gets Zebra MotionWorks data for a Match for the given match key.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -394,10 +385,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **matchKey** | **kotlin.String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **matchKey**        | **kotlin.String** | TBA Match Key, eg &#x60;2016nytr_qm1&#x60;                                                        | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -412,15 +403,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getTeamEventMatches"></a>
-# **getTeamEventMatches**
+## **getTeamEventMatches**
+
 > kotlin.Array&lt;Match&gt; getTeamEventMatches(teamKey, eventKey, ifModifiedSince)
-
-
 
 Gets a list of matches for the given team and event.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -444,11 +434,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **kotlin.String**| TBA Team Key, eg &#x60;frc254&#x60; | [default to null]
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| | | Name                                              | Type                                        | Description                                                                                                                                                                                                                                                                 | Notes                        |                        |                        |
+| | | ------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |
+||| **teamKey**                         | **kotlin.String**   | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                           | [default to null]            |            |            |
+||| **eventKey**                      | **kotlin.String**   | TBA Event Key, eg &#x60;2016nytr&#x60;                                                                                                                                                                                  | [default to null]            |            |            |
+||| **ifModifiedSince** | **kotlin.String**   | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | |
 
 ### Return type
 
@@ -463,15 +453,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getTeamEventMatchesKeys"></a>
-# **getTeamEventMatchesKeys**
+## **getTeamEventMatchesKeys**
+
 > kotlin.Array&lt;kotlin.String&gt; getTeamEventMatchesKeys(teamKey, eventKey, ifModifiedSince)
-
-
 
 Gets a list of match keys for matches for the given team and event.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -495,11 +484,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **kotlin.String**| TBA Team Key, eg &#x60;frc254&#x60; | [default to null]
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| | Name                               | Type                           | Description                                                                                                                                                                            | Notes                        |                        |
+| | ------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |
+|| **teamKey**                 | **kotlin.String**  | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                             | [default to null]            |            |
+|| **eventKey**               | **kotlin.String**  | TBA Event Key, eg &#x60;2016nytr&#x60;                                                                                                                       | [default to null]            |            |
+|| **ifModifiedSince** | **kotlin.String**  | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | |
 
 ### Return type
 
@@ -514,15 +503,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getTeamEventMatchesSimple"></a>
-# **getTeamEventMatchesSimple**
+## **getTeamEventMatchesSimple**
+
 > kotlin.Array&lt;Match&gt; getTeamEventMatchesSimple(teamKey, eventKey, ifModifiedSince)
-
-
 
 Gets a short-form list of matches for the given team and event.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -546,11 +534,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **kotlin.String**| TBA Team Key, eg &#x60;frc254&#x60; | [default to null]
- **eventKey** | **kotlin.String**| TBA Event Key, eg &#x60;2016nytr&#x60; | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **eventKey**        | **kotlin.String** | TBA Event Key, eg &#x60;2016nytr&#x60;                                                            | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -565,15 +553,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getTeamMatchesByYear"></a>
-# **getTeamMatchesByYear**
+## **getTeamMatchesByYear**
+
 > kotlin.Array&lt;Match&gt; getTeamMatchesByYear(teamKey, year, ifModifiedSince)
-
-
 
 Gets a list of matches for the given team and year.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -597,11 +584,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **kotlin.String**| TBA Team Key, eg &#x60;frc254&#x60; | [default to null]
- **year** | **kotlin.Int**| Competition Year (or Season). Must be 4 digits. | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| | | Name                                              | Type                                        | Description                                                                                                                                                                                                                                                                 | Notes                        |                        |                        |
+| | | ------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |--------------- |
+||| **teamKey**                         | **kotlin.String**   | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                                                                                           | [default to null]            |            |            |
+||| **year**                                  | **kotlin.Int**            | Competition Year (or Season). Must be 4 digits.                                                                                                                                                       | [default to null]            |            |            |
+||| **ifModifiedSince** | **kotlin.String**   | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | | |
 
 ### Return type
 
@@ -616,15 +603,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getTeamMatchesByYearKeys"></a>
-# **getTeamMatchesByYearKeys**
+## **getTeamMatchesByYearKeys**
+
 > kotlin.Array&lt;kotlin.String&gt; getTeamMatchesByYearKeys(teamKey, year, ifModifiedSince)
-
-
 
 Gets a list of match keys for matches for the given team and year.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -648,11 +634,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **kotlin.String**| TBA Team Key, eg &#x60;frc254&#x60; | [default to null]
- **year** | **kotlin.Int**| Competition Year (or Season). Must be 4 digits. | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| | Name                               | Type                           | Description                                                                                                                                                                            | Notes                        |                        |
+| | ------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |--------------- |
+|| **teamKey**                 | **kotlin.String**  | TBA Team Key, eg &#x60;frc254&#x60;                                                                                                                             | [default to null]            |            |
+|| **year**                       | **kotlin.Int**        | Competition Year (or Season). Must be 4 digits.                                                                                                     | [default to null]            |            |
+|| **ifModifiedSince** | **kotlin.String**  | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] | |
 
 ### Return type
 
@@ -667,15 +653,14 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getTeamMatchesByYearSimple"></a>
-# **getTeamMatchesByYearSimple**
+## **getTeamMatchesByYearSimple**
+
 > kotlin.Array&lt;MatchSimple&gt; getTeamMatchesByYearSimple(teamKey, year, ifModifiedSince)
-
-
 
 Gets a short-form list of matches for the given team and year.
 
 ### Example
+
 ```kotlin
 // Import classes:
 //import com.thebluealliance.infrastructure.*
@@ -699,11 +684,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **teamKey** | **kotlin.String**| TBA Team Key, eg &#x60;frc254&#x60; | [default to null]
- **year** | **kotlin.Int**| Competition Year (or Season). Must be 4 digits. | [default to null]
- **ifModifiedSince** | **kotlin.String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null]
+| Name                | Type              | Description                                                                                       | Notes                        |
+| ------------------- | ----------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **teamKey**         | **kotlin.String** | TBA Team Key, eg &#x60;frc254&#x60;                                                               | [default to null]            |
+| **year**            | **kotlin.Int**    | Competition Year (or Season). Must be 4 digits.                                                   | [default to null]            |
+| **ifModifiedSince** | **kotlin.String** | Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] [default to null] |
 
 ### Return type
 
@@ -717,4 +702,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
