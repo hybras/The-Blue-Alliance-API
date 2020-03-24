@@ -38,7 +38,7 @@ swaggerSources {
 }
 
 buildConfig {
-	buildConfigField 'String', 'TBA_Auth_Key', project["tba_api_key"] as String
+	buildConfigField 'String', 'TBA_Auth_Key', "\"${project["tba_api_key"]}\""
 }
 
 generateSwaggerCodeTba {
