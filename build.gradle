@@ -2,6 +2,7 @@ plugins {
 	id 'org.jetbrains.kotlin.jvm' version '1.3.70'
 	id 'java-library'
 	id 'org.hidetake.swagger.generator' version '2.18.2'
+	id "com.github.gmazzo.buildconfig" version "1.7.1"
 }
 
 repositories {
@@ -23,6 +24,8 @@ dependencies {
 	
 }
 
+group='org.thebluealliance'
+
 swaggerSources {
 	tba {
 		inputFile = file('openapi.yaml')
@@ -34,46 +37,24 @@ swaggerSources {
 	}
 }
 
+buildConfig {
+	buildConfigField 'String', 'TBA_Auth_Key', project["tba_api_key"] as String
+}
+
 generateSwaggerCodeTba {
 	doLast {
 		// The following snippet changes EventPredictions from a data class to a normal class, on account of its properties being dynamically known
 		def EventPredictions = file(
 			"${swaggerSources.tba.code.outputDir}/src/main/kotlin/com/thebluealliance/model/EventPredictions.kt"
 		)
-		EventPredictions.write(
-			EventPredictions.text.replaceFirst("data ", "")
-		)
+		EventPredictions.delete()
 		println("Fixed EventPredictions")
 		println("****************************************************************")
 		// Add api key to all RequestConfig headers
 		def RequestConfig = file(
 			"${swaggerSources.tba.code.outputDir}/src/main/kotlin/com/thebluealliance/infrastructure/RequestConfig.kt"
 		)
-		RequestConfig.write("""
-package com.thebluealliance.infrastructure
-
-/**
- * Defines a config object for a given request.
- * NOTE: This object doesn't include 'body' because it
- *       allows for caching of the constructed object
- *       for many request definitions.
- * NOTE: Headers is a Map<String,String> because rfc2616 defines
- *       multi-valued headers as csv-only.
- */
-class RequestConfig(
-    val method: RequestMethod,
-    val path: String,
-    headers: Map<String, String> = mapOf(),
-    val query: Map<String, List<String>> = mapOf()
-) {
-\tval headers = headers
-\t\t.toMutableMap()
-\t\t.apply {
-\t\t\tthis["X-TBA-Auth-Key"] = "${project["tba_api_key"]}"
-\t\t}.toMap()
-}
-
-""")
+		RequestConfig.delete()
 		println("Injected TBA-Auth-Key")
 		println("****************************************************************")
 	}
