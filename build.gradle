@@ -41,24 +41,13 @@ buildConfig {
 	buildConfigField 'String', 'TBA_Auth_Key', "\"${project["tba_api_key"]}\""
 }
 
-generateSwaggerCodeTba {
-	doLast {
-		// The following snippet changes EventPredictions from a data class to a normal class, on account of its properties being dynamically known
-		def EventPredictions = file(
-			"${swaggerSources.tba.code.outputDir}/src/main/kotlin/com/thebluealliance/model/EventPredictions.kt"
-		)
-		EventPredictions.delete()
-		println("Fixed EventPredictions")
-		println("****************************************************************")
-		// Add api key to all RequestConfig headers
-		def RequestConfig = file(
-			"${swaggerSources.tba.code.outputDir}/src/main/kotlin/com/thebluealliance/infrastructure/RequestConfig.kt"
-		)
-		RequestConfig.delete()
-		println("Injected TBA-Auth-Key")
-		println("****************************************************************")
-	}
-	
+generateSwaggerCodeTba.doLast {
+	def root = "${swaggerSources.tba.code.outputDir}/src/main/kotlin/com/thebluealliance/"
+	def toDelete = [
+		"model/EventPredictions.kt", // EventPredictions is a data class with no properties
+		"infrastructure/RequestConfig.kt", // We need to add api key to all RequestConfig headers
+	]
+	toDelete.each { file(root + it).delete() }
 }
 
 sourceSets.main.kotlin.srcDir "${swaggerSources.tba.code.outputDir}/src/main/kotlin"
