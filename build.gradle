@@ -35,6 +35,14 @@ swaggerSources {
 //			dependsOn validation
 		}
 	}
+	docs {
+	// openapi-generator generate -g markdown -o docsMd -i openapi.yaml
+		inputFile = file('openapi.yaml')
+		code {
+			language = 'markdown'
+			configFile = file("docs.json")
+		}
+	}
 }
 
 buildConfig {

@@ -1,0 +1,45 @@
+# ./Models.MatchScoreBreakdown2018Alliance
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**adjustPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**autoOwnershipPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**autoPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**autoQuestRankingPoint** | [**Boolean**](boolean.md) |  | [optional] [default to null]
+**autoRobot1** | [**String**](string.md) |  | [optional] [default to null]
+**autoRobot2** | [**String**](string.md) |  | [optional] [default to null]
+**autoRobot3** | [**String**](string.md) |  | [optional] [default to null]
+**autoRunPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**autoScaleOwnershipSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**autoSwitchAtZero** | [**Boolean**](boolean.md) |  | [optional] [default to null]
+**autoSwitchOwnershipSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**endgamePoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**endgameRobot1** | [**String**](string.md) |  | [optional] [default to null]
+**endgameRobot2** | [**String**](string.md) |  | [optional] [default to null]
+**endgameRobot3** | [**String**](string.md) |  | [optional] [default to null]
+**faceTheBossRankingPoint** | [**Boolean**](boolean.md) |  | [optional] [default to null]
+**foulCount** | [**Integer**](integer.md) |  | [optional] [default to null]
+**foulPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**rp** | [**Integer**](integer.md) |  | [optional] [default to null]
+**techFoulCount** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopOwnershipPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopScaleBoostSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopScaleForceSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopScaleOwnershipSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopSwitchBoostSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopSwitchForceSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**teleopSwitchOwnershipSec** | [**Integer**](integer.md) |  | [optional] [default to null]
+**totalPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**vaultBoostPlayed** | [**Integer**](integer.md) |  | [optional] [default to null]
+**vaultBoostTotal** | [**Integer**](integer.md) |  | [optional] [default to null]
+**vaultForcePlayed** | [**Integer**](integer.md) |  | [optional] [default to null]
+**vaultForceTotal** | [**Integer**](integer.md) |  | [optional] [default to null]
+**vaultLevitatePlayed** | [**Integer**](integer.md) |  | [optional] [default to null]
+**vaultLevitateTotal** | [**Integer**](integer.md) |  | [optional] [default to null]
+**vaultPoints** | [**Integer**](integer.md) |  | [optional] [default to null]
+**tbaUnderscoregameData** | [**String**](string.md) | Unofficial TBA-computed value of the FMS provided GameData given to the alliance teams at the start of the match. 3 Character String containing &#x60;L&#x60; and &#x60;R&#x60; only. The first character represents the near switch, the 2nd the scale, and the 3rd the far, opposing, switch from the alliance&#39;s perspective. An &#x60;L&#x60; in a position indicates the platform on the left will be lit for the alliance while an &#x60;R&#x60; will indicate the right platform will be lit for the alliance. See also [WPI Screen Steps](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/826278-2018-game-data-details). | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
