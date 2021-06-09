@@ -230,3 +230,5 @@ gradle-app.setting
 **/build/
 
 # End of https://www.gitignore.io/api/java,maven,gradle,eclipse,code-java,intellij+all,visualstudiocode
+
+lib
